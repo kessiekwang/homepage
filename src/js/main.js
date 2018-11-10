@@ -1,6 +1,6 @@
 /* global fetch */
 
-const version = require("../../aurawalls/tracking/package.json").version;
+const version = require("../../kessiekwang/tracking/package.json").version;
 let track_uri = process.env.MS_TRACK_URI.replace('_version_', version);
 
 function track() {
