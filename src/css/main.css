@@ -92,9 +92,9 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Concert One", cursive;
+	  font-family: 'Life Savers', cursive;
 		font-size: 13pt;
-		font-weight: 300;
+		font-weight: 700;
 		line-height: 1.65;
 	}
 

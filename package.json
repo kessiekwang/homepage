@@ -4,26 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lib-http": "cd aurawalls/tracking && lib http",
-    "lib-dev": "cd aurawalls/tracking && lib up dev",
-    "lib-release": "cd aurawalls/tracking && lib release",
+    "lib-init": "lib init",
+    "lib-create": "lib create tracking",
+    "lib-http": "cd kessiekwang/tracking && lib http",
+    "lib-dev": "cd kessiekwang/tracking && lib up dev",
+    "lib-release": "cd kessiekwang/tracking && lib release",
     "prebuild": "rm -rf docs && cp -R ./assets ./docs",
     "build": "parcel build src/index.html --out-dir docs --no-source-maps --log-level 4",
-    "serve": "MS_URI=https://aurawalls.lib.id MS_TRACK_URI=tracking@dev/track parcel src/index.html --out-dir docs --port $PORT --log-level 4 --hmr-port 8081",
+    "serve": "MS_URI=https://kessiekwang.lib.id MS_TRACK_URI=tracking@dev/track parcel src/index.html --out-dir docs --port $PORT --log-level 4 --hmr-port 8081",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "git subtree push --prefix docs pages master"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aurawalls/website.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aurawalls/website/issues"
-  },
-  "homepage": "https://github.com/aurawalls/website#readme",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.5.0",
     "lib.cli": "^4.4.2",
